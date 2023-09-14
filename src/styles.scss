@@ -2,3 +2,49 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.ql-editor {
+    margin-top: 70px;
+
+    p {
+        font-size: 18px;
+        line-height: 1.58;
+        letter-spacing: -.004em;
+        font-weight: 400;
+        font-style: normal;
+        margin: 0 !important;
+        margin-top: 21px !important;
+        color: rgba(0,0,0,.84);
+        word-break: break-word;
+        word-wrap: break-word;
+        font-family: medium-content-serif-font,Georgia,Cambria,"Times New Roman",Times,serif;
+    }
+
+    a {
+        color: inherit;
+    }
+}
+
+.ql-video {
+    margin: 35px 0 0 0;
+    width: 100%;
+    aspect-ratio: 1.78;
+}
+
+.ql-syntax {
+    border-radius: 4px !important;
+    padding: 32px !important;
+    border: 1px solid #E5E5E5 !important;
+    background: #F9F9F9 !important;
+    white-space: pre !important;
+    font-size: 14px;
+    position: relative;
+    overflow: hidden !important;
+    margin-top: 16px !important;
+    font-family: source-code-pro,Menlo,Monaco,"Courier New",Courier,monospace;
+    letter-spacing: 0;
+    font-weight: 400;
+    font-style: normal;
+    color: rgba(0,0,0,.84) !important;
+    line-height: 1.4;
+}

@@ -1,0 +1,33 @@
+<div id="writing-content">
+    <div id="toolbar1">
+        <span class="ql-formats">
+           <button type="button" class="ql-bold"></button>
+           <button type="button" class="ql-italic"></button>
+           <button type="button" class="ql-link"></button>
+        </span>
+        <span class="ql-formats">
+           <button type="button" class="ql-header" value="1"></button>
+           <button type="button" class="ql-header" value="2"></button>
+           <button type="button" class="ql-blockquote"></button>
+        </span>
+    </div>
+    <div id="toolbar2">
+        <button class="toolbar-button" type="button" value="image" (click)="photo.click()">
+            <img src="assets/image-icon.png">
+        </button>
+        <input #photo class="toolbar-button" type="file" (change)="onPhotoFileChange($event)" accept="image/*" style="display: none;">
+        <button type="button" (click)="handleInsertVideoClick()">
+            <img src="assets/video-icon.png">
+        </button>
+        <button class="toolbar-button" type="button" (click)="handleInsertCodeClick($event)">
+            <img src="assets/code-icon.png">
+        </button>
+    </div>
+    <button type="button" class="toolbar-button open-toolbar-button" (click)="handleOpenToolBarClick()">
+        <img src="assets/open-icon.png">
+    </button>
+    <button type="button" class="toolbar-button close-toolbar-button" (click)="handleCloseToolBarClick()">
+        <img src="assets/close-icon.png">
+    </button>
+    <div id="editor"></div>
+</div>

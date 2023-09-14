@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { interval } from 'rxjs';
 
 @Component({
@@ -6,17 +6,15 @@ import { interval } from 'rxjs';
   templateUrl: './errors.component.html',
   styleUrls: ['./errors.component.scss']
 })
-export class ErrorsComponent {
+export class ErrorsComponent implements OnInit {
 	public percent = 0;
-
-    constructor() { }
 
     ngOnInit(): void {
         this.countDown();
     }
 
     countDown(): void {
-        interval(100).subscribe((x) => {
+        interval(100).subscribe(() => {
             this.percent += 2;
             if (this.percent >= 100) {
                 window.location.href = '/';

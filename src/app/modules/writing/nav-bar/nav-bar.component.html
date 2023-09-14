@@ -1,0 +1,35 @@
+<div id="writing-nav-bar">
+    <div class="left-nav-bar">
+        <div class="logo-img">
+            <img src="assets/logo.png">
+        </div>
+        <div class="vertical-line-container">
+            <div class="vertical-line"></div>
+        </div>
+        <div class="user-name">{{userName}}</div>
+        <div class="writing-status">{{writingStatus}}</div>
+    </div>
+    <div class="right-nav-bar">
+        <div class="back-to-story-container">
+            <button class="back-to-story">Back to story</button>
+        </div>
+        <div class="save-and-public-container">
+            <button class="save-and-public">Save and publish</button>
+        </div>
+        <div class="setting">
+            <button>
+                <mat-icon>
+                    more_horiz
+                </mat-icon>
+            </button>
+        </div>
+        <div class="user-info">
+            <button id="user-notification-list">
+                <mat-icon>notifications</mat-icon>
+            </button>
+            <button id="user-info-button">
+                <img id="user-avatar" [src]="userAvatarUrl || 'assets/default-avatar.png'">
+            </button>
+        </div>
+    </div>
+</div>
