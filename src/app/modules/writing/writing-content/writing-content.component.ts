@@ -34,7 +34,6 @@ export class WritingContentComponent implements AfterViewInit {
         });
     
         this.quill.on('selection-change', (range) => {
-            // console.log('range: ', range);
             if (!range) {
                 return;
             }
@@ -79,7 +78,6 @@ export class WritingContentComponent implements AfterViewInit {
         });
     
         this.quill.on('text-change', (delta) => {
-            // console.log('delta: ', delta);
             if (delta.ops?.[1]?.insert === '\n' || delta.ops?.[0]?.insert === '\n') {
                 // Get position of that line
                 const index = this.quill?.getSelection()?.index
@@ -253,11 +251,7 @@ export class WritingContentComponent implements AfterViewInit {
                 const src = 'data:image/png;base64,' + base64String;
                 const index = this.quill?.getSelection()?.index;
                 this.quill?.insertEmbed(index ? index : 0, 'image', src);
-                this.quill?.updateContents(new Delta()
-                    .retain(index? index + 1 : 0)
-                    .insert('\n')
-                );
-                this.quill?.setSelection(index ? index + 2 : 0, 0);
+                this.quill?.setSelection(index ? index + 1 : 0, 0, 'user');
             }
         };
 
