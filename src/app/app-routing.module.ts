@@ -12,10 +12,6 @@ const routes: Routes = [
 		loadChildren: () => import('./modules/writing/writing.module').then(m => m.WritingModule),
 	},
 	{
-		path: 'user/posts',
-		loadChildren: () => import('./modules/posts/posts.module').then(m => m.PostsModule),
-	},
-	{
         path: '**',
         loadChildren: () => import('./modules/errors/errors.module').then(m => m.ErrorModule),
     },

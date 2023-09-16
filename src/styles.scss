@@ -5,24 +5,68 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .ql-editor {
     margin-top: 70px;
+    padding-bottom: 150px !important;
 
     p {
-        font-size: 18px;
+        font-size: 21px;
         line-height: 1.58;
         letter-spacing: -.004em;
         font-weight: 400;
         font-style: normal;
         margin: 0 !important;
-        margin-top: 21px !important;
+        margin-top: 0px !important;
         color: rgba(0,0,0,.84);
-        word-break: break-word;
-        word-wrap: break-word;
         font-family: medium-content-serif-font,Georgia,Cambria,"Times New Roman",Times,serif;
+    }
+
+    p + p {
+        margin-top: 21px !important;
     }
 
     a {
         color: inherit;
     }
+
+    h3 {
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.25;
+        letter-spacing: 0;
+        font-family: medium-content-title-font,Georgia,Cambria,"Times New Roman",Times,serif;
+        font-size: 42px !important;
+        color: rgba(0,0,0,.84);
+    }
+
+    h4 {
+        margin: 5px 0 22px 0;
+        font-family: medium-content-sans-serif-font,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 28px;
+        line-height: 1.22;
+        letter-spacing: -.012em;
+        color: rgba(0,0,0,.84);
+    }
+
+    blockquote {
+        font-family: medium-content-serif-font,Georgia,Cambria,"Times New Roman",Times,serif;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 21px;
+        line-height: 1.58;
+        letter-spacing: -.003em;
+        border-left: 3px solid rgba(0,0,0,.84) !important;
+        padding-top: 0 !important;
+        padding-bottom: 2px !important;
+        padding-right: 20px !important;
+        margin: 8px 0 0 0 !important;
+        color: rgba(0,0,0,.84);
+    }
+
+    blockquote + blockquote {
+        margin: 0 !important;
+        padding-top: 27px !important;
+    }      
 }
 
 .ql-video {
@@ -47,4 +91,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     font-style: normal;
     color: rgba(0,0,0,.84) !important;
     line-height: 1.4;
+}
+
+.svgIcon-use {
+    fill: white;
 }

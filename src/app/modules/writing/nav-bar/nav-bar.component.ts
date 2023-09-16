@@ -6,7 +6,6 @@ import { Component, Input } from '@angular/core';
     styleUrls: ['./nav-bar.component.scss']
 })
 export class NavBarComponent {
-    @Input() userName = 'User Name';
-    @Input() writingStatus = 'Not Save Yet';
+    @Input() userName = 'Do Tien Dung';
     @Input() userAvatarUrl = '';
 }
