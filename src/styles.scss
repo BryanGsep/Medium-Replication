@@ -66,7 +66,32 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     blockquote + blockquote {
         margin: 0 !important;
         padding-top: 27px !important;
-    }      
+    }
+
+    figcaption {
+        justify-content: center;
+        display: flex;
+        font-size: 16px;
+        font-family: medium-content-sans-serif-font,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        color: rgba(0,0,0,.84);
+        input {
+            text-align: center;
+            font-size: 16px;
+            font-family: medium-content-sans-serif-font,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            color: rgba(0,0,0,.84);
+            padding: 0 !important;
+            width: 400px;
+            border: none !important;
+        }
+
+        input:focus { 
+            outline: none !important;
+        }
+    }
 }
 
 .ql-video {
@@ -95,4 +120,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .svgIcon-use {
     fill: white;
+}
+
+.ql-card-figure {
+    margin: 43px 0 0 0 !important;
 }
